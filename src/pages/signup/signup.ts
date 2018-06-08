@@ -14,6 +14,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'signup.html',
 })
 export class SignupPage {
+  userData = {"nombre": "", "email": "", "usuario": "", "password": ""};
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -22,4 +23,13 @@ export class SignupPage {
     console.log('ionViewDidLoad SignupPage');
   }
 
+  /*
+  login(){
+  	this.navCtrl.push(LoginPage);
+  }
+  */
+
+  signup(){
+  	this.navCtrl.push(SignupPage);
+  }
 }

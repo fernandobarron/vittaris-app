@@ -27,8 +27,9 @@ export class LoginPage {
   }
 
   login(){
+    /*
     // Your app login API web service call triggers
-    this.authService.postData(this.userData,'login').then((result) => {
+    this.authService.postData(this.userData, 'login').then((result) => {
       this.responseData = result;
       if(this.responseData.userData){
       	console.log(this.responseData);
@@ -39,6 +40,8 @@ export class LoginPage {
     }, (err) => {
       // Error log
     });
+    */
+    this.navCtrl.push(HomePage);
   }
 
 }

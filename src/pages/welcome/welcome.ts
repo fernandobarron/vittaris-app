@@ -23,12 +23,4 @@ export class WelcomePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad WelcomePage');
   }
-
-  login(){
-  	this.navCtrl.push(LoginPage);
-  }
-
-  signup(){
-  	this.navCtrl.push(SignupPage);
-  }
 }

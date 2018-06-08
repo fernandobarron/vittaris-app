@@ -4,15 +4,21 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
+<ion-content padding color="vittaris" id="signup">
+  <img src="assets/imgs/logo.png" id="logo"/>
 
-  <ion-navbar>
-    <ion-title>signup</ion-title>
-  </ion-navbar>
+  <ion-label stacked>Nombre</ion-label>
+  <ion-input type="text" [(ngModel)]="userData.nombre"></ion-input>
 
-</ion-header>
+  <ion-label stacked>Email</ion-label>
+  <ion-input type="text" [(ngModel)]="userData.email"></ion-input>
 
+  <ion-label stacked>Password</ion-label>
+  <ion-input type="password" [(ngModel)]="userData.password"></ion-input>
 
-<ion-content padding>
+  <ion-label stacked>Confirmar Password</ion-label>
+  <ion-input type="password" [(ngModel)]="userData.password"></ion-input>
 
+  <button ion-button full color="vittaris" (click)="signup()">Registrarme</button>
 </ion-content>
+

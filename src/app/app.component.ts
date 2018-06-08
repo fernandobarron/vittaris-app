@@ -7,7 +7,6 @@ import { WelcomePage } from '../pages/welcome/welcome';
 import { LoginPage } from '../pages/login/login';
 import { SignupPage } from '../pages/signup/signup';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 import { MapaPage } from '../pages/mapa/mapa';
 
 @Component({
@@ -25,11 +24,12 @@ export class VittarisApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage },
-      { title: 'Mapa', component: MapaPage }
+      { title: 'Inicio', component: WelcomePage },
+      { title: 'Asesoria', component: HomePage },
+      { title: 'Buscar', component: MapaPage },
+      { title: 'Registro', component: SignupPage },
+      { title: 'Login', component: LoginPage }
     ];
-
   }
 
   initializeApp() {
