@@ -1,0 +1,26 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content padding color="vittaris" id="welcome">
+  <img src="assets/imgs/logo.png" id="logo"/>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <h1 id="slogan">Salud y vida en un click</h1>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-label stacked>Correo Electrónico</ion-label>
+  <ion-input type="text" [(ngModel)]="userData.email"></ion-input>
+
+  <ion-label stacked>Contraseña</ion-label>
+  <ion-input type="password" [(ngModel)]="userData.password"></ion-input>
+
+  <button ion-button full color="vittaris" (click)="login()">Entrar</button>
+
+  <button ion-button full color="vittaris" (click)="registro()">Registrarme</button>
+</ion-content>

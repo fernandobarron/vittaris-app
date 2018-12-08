@@ -1,0 +1,52 @@
+<!--
+  Generated template for the SignupPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<!--<form (ngSubmit)="logForm()" [formGroup]="logeo" name="myForm" novalidate>-->
+<ion-content padding color="vittaris" id="signup">
+  <ion-label stacked>Nombre</ion-label>
+  <ion-input type="text" [(ngModel)]="userData.nombre"><ion-icon name="ios-eye-outline" item-right></ion-icon></ion-input>
+
+  <ion-label stacked>Correo electrónico</ion-label>
+  <ion-input type="text" [(ngModel)]="userData.email"><ion-icon name="ios-eye-outline" item-right></ion-icon></ion-input>
+
+  <ion-label stacked>Confirma tu Correo electrónico</ion-label>
+  <ion-input type="text"><ion-icon name="ios-eye-outline" item-right></ion-icon></ion-input>
+
+
+  <ion-label stacked>Password</ion-label>
+  <ion-input type="password" [(ngModel)]="userData.password"><ion-icon name="ios-eye-outline" item-right></ion-icon></ion-input>
+
+  <ion-label stacked>Confirmar Password</ion-label>
+  <ion-input type="password" [(ngModel)]="userData.password"><ion-icon name="ios-eye-outline" item-right></ion-icon></ion-input>
+
+
+
+  <ion-list radio-group [(ngModel)]="tipousuario">
+      <ion-list-header>
+          Tipo de registro
+        </ion-list-header>
+      <ion-item>
+        <ion-label>Usuario</ion-label>
+        <ion-radio value="usuario" checked></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Especialista</ion-label>
+        <ion-radio value="especialista"></ion-radio>
+      </ion-item>
+      <ion-item>
+          <ion-label>Estudiante</ion-label>
+          <ion-radio value="estudiante"></ion-radio>
+        </ion-item>
+    </ion-list>
+
+
+
+  <button ion-button full color="vittaris" (click)="signup()">Registrarme</button>
+
+</ion-content>
+

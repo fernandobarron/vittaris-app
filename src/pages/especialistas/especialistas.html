@@ -1,0 +1,39 @@
+<!--
+  Generated template for the EspecialistasPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="vittaris" >
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Especialistas</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+
+<ion-content padding>
+    <ion-searchbar ></ion-searchbar>
+    <ion-refresher >
+      <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+
+    <ion-list>
+      <ion-item *ngFor="let term of yourArray;">
+          <ion-avatar item-start>
+            <img src="assets/imgs/persona.png">
+          </ion-avatar>
+          <h2>Nombre del Especialista</h2>
+          <h3>Especialidad</h3>
+          <p>Disponibilidad</p>
+          <ion-buttons right>
+              <button ion-button icon-only >
+                  <ion-icon name="call"></ion-icon>
+                </button>
+          </ion-buttons>
+        </ion-item>
+      </ion-list>
+
+</ion-content>

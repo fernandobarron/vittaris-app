@@ -1,0 +1,55 @@
+<!--
+  Generated template for the WelcomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="vittaris" >
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Vittaris</ion-title>
+    <ion-buttons right>
+        <button ion-button icon-only (click)="presentPopover($event)">
+            <ion-icon name="notifications"></ion-icon>
+          </button>
+    </ion-buttons>
+   
+  </ion-navbar>
+</ion-header>
+
+<ion-content color="vittaris" id="welcome">
+    
+      <img src="assets/imgs/bg-inicio.png" id="bg-inicio"/>
+      <ion-searchbar ></ion-searchbar>
+  
+ <!-- <ion-searchbar id="buscardorGeneral" placeholder="¿Qué estás buscando?"></ion-searchbar>
+
+  <ion-searchbar
+  [(ngModel)]="myInput"
+  [showCancelButton]="shouldShowCancel"
+  (ionInput)="onInput($event)"
+  (ionCancel)="onCancel($event)">
+</ion-searchbar>-->
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4><img width="200" height="150" src="assets/imgs/cuerpo.jpeg"  (click)="listaenfermedad()"/></ion-col>
+      <ion-col col-4><img width="200" height="150" src="assets/imgs/dorso.jpg"  (click)="listaenfermedad()"/></ion-col>
+      <ion-col col-4><img width="200" height="150" src="assets/imgs/cabeza.jpg"  (click)="listaenfermedad()"/></ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col col-4><img width="200" height="150" src="assets/imgs/geni.jpeg"  (click)="listaenfermedad()"/></ion-col>
+        <ion-col col-4><img width="200" height="150" src="assets/imgs/cuerpocompleto.jpeg"  (click)="listaenfermedad()"/></ion-col>
+        <ion-col col-4><img width="200" height="150" src="assets/imgs/veterinario.jpeg" (click)="listaenfermedad()"/></ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-tabs>
+      <ion-tab tabIcon="contact" [root]="tab1"></ion-tab>
+      <ion-tab tabIcon="compass" [root]="tab2"></ion-tab>
+      <ion-tab tabIcon="analytics" [root]="tab3"></ion-tab>
+      <ion-tab tabIcon="settings" [root]="tab4"></ion-tab>
+    </ion-tabs>
+
+
+</ion-content>

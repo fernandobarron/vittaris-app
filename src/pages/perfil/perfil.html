@@ -1,0 +1,102 @@
+<!--
+  Generated template for the PerfilPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="vittaris" >
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Perfil usuario</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+<ion-content padding>
+
+    <ion-card width="200" height="150">
+        <ion-card-content>
+          <ion-card-title>
+              <ion-col col-4> <img width="200" height="150" src="assets/imgs/persona.png"></ion-col>
+            </ion-card-title>
+            </ion-card-content>
+      </ion-card>
+    <ion-list>
+        
+        <ion-item>
+            <ion-label color="primary" stacked>Nombre</ion-label>
+            <ion-input type="password" placeholder="Nombre del especialista"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label color="primary" stacked>Especialidad</ion-label>
+            <ion-input type="password" placeholder="Especialidad"></ion-input>
+        </ion-item>
+        
+                <ion-item>
+                    <ion-label color="primary" stacked>Cedula Profesional</ion-label>
+                    <ion-input type="password" placeholder="Cedula Profesional"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label color="primary" stacked>Universidad</ion-label>
+                    <ion-input type="password" placeholder="Universidad"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label color="primary" stacked>Verificada</ion-label>
+                    <ion-input type="password" placeholder="Verificada"></ion-input>
+                </ion-item>
+        <ion-item>
+                    <ion-label>Fecha de nacimiento</ion-label>
+                    <ion-datetime displayFormat="MM/DD/YYYY" ></ion-datetime>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label color="primary" stacked>Correo</ion-label>
+                      <ion-input type="password" placeholder="Correo electronico"></ion-input>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label color="primary" stacked>Sexo</ion-label>
+                      <ion-input type="password" placeholder="Sexo"></ion-input>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label color="primary" stacked>CURP</ion-label>
+                      <ion-input type="password" placeholder="CURP"></ion-input>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label color="primary" stacked>Calificación</ion-label>
+                      <ion-input type="password" placeholder="Calificación"></ion-input>
+                  </ion-item>
+
+                  <ion-item>
+                      <ion-label color="primary" stacked>Nombre de consultorio</ion-label>
+                      <ion-input type="password" placeholder="Nombre de consultorio"></ion-input>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label color="primary" stacked>Direccion</ion-label>
+                      <ion-input type="password" placeholder="Direccion"></ion-input>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label color="primary" stacked>Ubicacion</ion-label>
+                      <ion-input type="password" placeholder="Calificación"></ion-input>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label color="primary" stacked>Calificación</ion-label>
+                      <ion-input type="password" placeholder="Calificación"></ion-input>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label color="primary" stacked>Costo de consulta primera cita</ion-label>
+                      <ion-input type="password" placeholder="Costo de consulta primera cita"></ion-input>
+                  </ion-item>
+                  <ion-item>
+                      <ion-label color="primary" stacked>Costo consulta normal</ion-label>
+                      <ion-input type="password" placeholder="Costo consulta normal"></ion-input>
+                  </ion-item>
+
+    </ion-list>
+    <ion-tabs>
+        <ion-tab tabIcon="contact" [root]="tab1"></ion-tab>
+        <ion-tab tabIcon="compass" [root]="tab2"></ion-tab>
+        <ion-tab tabIcon="analytics" [root]="tab3"></ion-tab>
+        <ion-tab tabIcon="settings" [root]="tab4"></ion-tab>
+      </ion-tabs>
+  
+</ion-content>

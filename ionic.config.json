@@ -1,0 +1,7 @@
+{
+  "name": "vittaris",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

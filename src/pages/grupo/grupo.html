@@ -1,0 +1,57 @@
+<ion-header>
+    <ion-navbar color="vittaris" >
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Crear Grupos</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+<ion-content padding>
+
+    <div>
+        <ion-list>
+          <ion-list-header>
+           Mis grupos
+          </ion-list-header>
+              <ion-item  >
+                <ion-avatar item-start>
+                  <img src="assets/imgs/logovita.jpeg">
+                </ion-avatar>
+                <h2>Familia</h2>
+                <p>Mesnaje a grupo</p>
+                <ion-note item-end>10 miembros</ion-note>
+              </ion-item>
+        </ion-list>
+        </div>
+        <ion-item><button ion-button  color="vittaris" (click)="agregar()" item-end><ion-icon name="add-circle"></ion-icon>Nuevo</button></ion-item>
+        
+
+        <ion-card *ngIf="nuevo">
+            
+              <ion-card-header>
+                Crear grupo nuevo
+              </ion-card-header>
+            
+              <ion-card-content>
+                  <ion-list>
+                      <ion-item>
+                          <ion-label color="primary" stacked>Nombre del Grupo </ion-label>
+                          <ion-input type="password" placeholder="Nombre del grupo"></ion-input>
+                      </ion-item>
+                      <ion-item>
+                          <ion-label color="primary" stacked>Agregar Personas</ion-label>
+                          <ion-input type="password" placeholder="Correo o nombre de usuario"></ion-input>
+                      </ion-item>
+                  
+                      <ion-item>
+                          <button ion-button full color="vittaris" >Guardar</button>
+                      </ion-item>
+                  
+                  </ion-list>
+              </ion-card-content>
+            
+            </ion-card>
+ 
+
+</ion-content>
